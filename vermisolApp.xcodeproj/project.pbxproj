@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		A851EAB824F791600015E46B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A851EAB724F791600015E46B /* AppDelegate.swift */; };
 		A851EABA24F791600015E46B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A851EAB924F791600015E46B /* SceneDelegate.swift */; };
-		A851EABC24F791600015E46B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A851EABB24F791600015E46B /* ViewController.swift */; };
 		A851EABF24F791600015E46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A851EABD24F791600015E46B /* Main.storyboard */; };
 		A851EAC124F791650015E46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A851EAC024F791650015E46B /* Assets.xcassets */; };
 		A851EAC424F791650015E46B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A851EAC224F791650015E46B /* LaunchScreen.storyboard */; };
+		A8F5601424FBA0F9007E8465 /* homePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601324FBA0F9007E8465 /* homePageViewController.swift */; };
+		A8F5601624FBA117007E8465 /* categoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601524FBA117007E8465 /* categoriesViewController.swift */; };
+		A8F5601824FBA121007E8465 /* newsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601724FBA121007E8465 /* newsViewController.swift */; };
+		A8F5601A24FBA139007E8465 /* myOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601924FBA139007E8465 /* myOrdersViewController.swift */; };
+		A8F5601D24FBA16C007E8465 /* homePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601C24FBA16C007E8465 /* homePageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A851EAB424F791600015E46B /* vermisolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vermisolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A851EAB724F791600015E46B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A851EAB924F791600015E46B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A851EABB24F791600015E46B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A851EABE24F791600015E46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A851EAC024F791650015E46B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A851EAC324F791650015E46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A851EAC524F791650015E46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8F5601324FBA0F9007E8465 /* homePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageViewController.swift; sourceTree = "<group>"; };
+		A8F5601524FBA117007E8465 /* categoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesViewController.swift; sourceTree = "<group>"; };
+		A8F5601724FBA121007E8465 /* newsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsViewController.swift; sourceTree = "<group>"; };
+		A8F5601924FBA139007E8465 /* myOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOrdersViewController.swift; sourceTree = "<group>"; };
+		A8F5601C24FBA16C007E8465 /* homePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		A851EAB624F791600015E46B /* vermisolApp */ = {
 			isa = PBXGroup;
 			children = (
+				A8F5601B24FBA153007E8465 /* Cells */,
+				A8F5601224FBA0D4007E8465 /* View Controllers */,
 				A851EAB724F791600015E46B /* AppDelegate.swift */,
 				A851EAB924F791600015E46B /* SceneDelegate.swift */,
-				A851EABB24F791600015E46B /* ViewController.swift */,
 				A851EABD24F791600015E46B /* Main.storyboard */,
 				A851EAC024F791650015E46B /* Assets.xcassets */,
 				A851EAC224F791650015E46B /* LaunchScreen.storyboard */,
 				A851EAC524F791650015E46B /* Info.plist */,
 			);
 			path = vermisolApp;
+			sourceTree = "<group>";
+		};
+		A8F5601224FBA0D4007E8465 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8F5601324FBA0F9007E8465 /* homePageViewController.swift */,
+				A8F5601524FBA117007E8465 /* categoriesViewController.swift */,
+				A8F5601724FBA121007E8465 /* newsViewController.swift */,
+				A8F5601924FBA139007E8465 /* myOrdersViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A8F5601B24FBA153007E8465 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A8F5601C24FBA16C007E8465 /* homePageCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A851EABC24F791600015E46B /* ViewController.swift in Sources */,
+				A8F5601424FBA0F9007E8465 /* homePageViewController.swift in Sources */,
+				A8F5601A24FBA139007E8465 /* myOrdersViewController.swift in Sources */,
+				A8F5601D24FBA16C007E8465 /* homePageCollectionViewCell.swift in Sources */,
+				A8F5601624FBA117007E8465 /* categoriesViewController.swift in Sources */,
 				A851EAB824F791600015E46B /* AppDelegate.swift in Sources */,
 				A851EABA24F791600015E46B /* SceneDelegate.swift in Sources */,
+				A8F5601824FBA121007E8465 /* newsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZDG25F63H5;
 				INFOPLIST_FILE = vermisolApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZDG25F63H5;
 				INFOPLIST_FILE = vermisolApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
