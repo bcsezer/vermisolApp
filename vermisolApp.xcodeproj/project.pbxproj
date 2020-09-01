@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8044D6724FD49850079242A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8044D6624FD49850079242A /* MenuTableViewController.swift */; };
+		A8044D6924FD49BE0079242A /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8044D6824FD49BE0079242A /* SlideInTransition.swift */; };
 		A851EAB824F791600015E46B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A851EAB724F791600015E46B /* AppDelegate.swift */; };
 		A851EABA24F791600015E46B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A851EAB924F791600015E46B /* SceneDelegate.swift */; };
 		A851EABF24F791600015E46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A851EABD24F791600015E46B /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A8044D6624FD49850079242A /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		A8044D6824FD49BE0079242A /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
 		A851EAB424F791600015E46B /* vermisolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vermisolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A851EAB724F791600015E46B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A851EAB924F791600015E46B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8044D6524FD48B10079242A /* Side Menü */ = {
+			isa = PBXGroup;
+			children = (
+				A8044D6624FD49850079242A /* MenuTableViewController.swift */,
+				A8044D6824FD49BE0079242A /* SlideInTransition.swift */,
+			);
+			name = "Side Menü";
+			path = "Side Menü";
+			sourceTree = "<group>";
+		};
 		A851EAAB24F791600015E46B = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +78,7 @@
 		A851EAB624F791600015E46B /* vermisolApp */ = {
 			isa = PBXGroup;
 			children = (
+				A8044D6524FD48B10079242A /* Side Menü */,
 				A8F5601B24FBA153007E8465 /* Cells */,
 				A8F5601224FBA0D4007E8465 /* View Controllers */,
 				A851EAB724F791600015E46B /* AppDelegate.swift */,
@@ -166,10 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8044D6924FD49BE0079242A /* SlideInTransition.swift in Sources */,
 				A8F5601424FBA0F9007E8465 /* homePageViewController.swift in Sources */,
 				A8F5601A24FBA139007E8465 /* myOrdersViewController.swift in Sources */,
 				A8F5601D24FBA16C007E8465 /* homePageCollectionViewCell.swift in Sources */,
 				A8F5601624FBA117007E8465 /* categoriesViewController.swift in Sources */,
+				A8044D6724FD49850079242A /* MenuTableViewController.swift in Sources */,
 				A851EAB824F791600015E46B /* AppDelegate.swift in Sources */,
 				A851EABA24F791600015E46B /* SceneDelegate.swift in Sources */,
 				A8F5601824FBA121007E8465 /* newsViewController.swift in Sources */,
