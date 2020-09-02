@@ -14,6 +14,9 @@
 		A851EABF24F791600015E46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A851EABD24F791600015E46B /* Main.storyboard */; };
 		A851EAC124F791650015E46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A851EAC024F791650015E46B /* Assets.xcassets */; };
 		A851EAC424F791650015E46B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A851EAC224F791650015E46B /* LaunchScreen.storyboard */; };
+		A89A5A1724FEE0590065F220 /* productDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A5A1624FEE0590065F220 /* productDetailViewController.swift */; };
+		A89A5A1D24FFCFCB0065F220 /* belgelerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A5A1C24FFCFCB0065F220 /* belgelerTableViewCell.swift */; };
+		A8E2DCCA24FE858200594D64 /* belgelerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2DCC924FE858200594D64 /* belgelerViewController.swift */; };
 		A8F5601424FBA0F9007E8465 /* homePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601324FBA0F9007E8465 /* homePageViewController.swift */; };
 		A8F5601624FBA117007E8465 /* categoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601524FBA117007E8465 /* categoriesViewController.swift */; };
 		A8F5601824FBA121007E8465 /* newsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601724FBA121007E8465 /* newsViewController.swift */; };
@@ -31,6 +34,9 @@
 		A851EAC024F791650015E46B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A851EAC324F791650015E46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A851EAC524F791650015E46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A89A5A1624FEE0590065F220 /* productDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetailViewController.swift; sourceTree = "<group>"; };
+		A89A5A1C24FFCFCB0065F220 /* belgelerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = belgelerTableViewCell.swift; sourceTree = "<group>"; };
+		A8E2DCC924FE858200594D64 /* belgelerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = belgelerViewController.swift; sourceTree = "<group>"; };
 		A8F5601324FBA0F9007E8465 /* homePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageViewController.swift; sourceTree = "<group>"; };
 		A8F5601524FBA117007E8465 /* categoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesViewController.swift; sourceTree = "<group>"; };
 		A8F5601724FBA121007E8465 /* newsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +58,7 @@
 		A8044D6524FD48B10079242A /* Side Menü */ = {
 			isa = PBXGroup;
 			children = (
+				A8E2DCC824FE856500594D64 /* Menü Viewcontrollers */,
 				A8044D6624FD49850079242A /* MenuTableViewController.swift */,
 				A8044D6824FD49BE0079242A /* SlideInTransition.swift */,
 			);
@@ -91,9 +98,27 @@
 			path = vermisolApp;
 			sourceTree = "<group>";
 		};
+		A89A5A1524FEE0060065F220 /* Product Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A89A5A1624FEE0590065F220 /* productDetailViewController.swift */,
+			);
+			path = "Product Detail";
+			sourceTree = "<group>";
+		};
+		A8E2DCC824FE856500594D64 /* Menü Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				A8E2DCC924FE858200594D64 /* belgelerViewController.swift */,
+			);
+			name = "Menü Viewcontrollers";
+			path = "Menü Viewcontrollers";
+			sourceTree = "<group>";
+		};
 		A8F5601224FBA0D4007E8465 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A89A5A1524FEE0060065F220 /* Product Detail */,
 				A8F5601324FBA0F9007E8465 /* homePageViewController.swift */,
 				A8F5601524FBA117007E8465 /* categoriesViewController.swift */,
 				A8F5601724FBA121007E8465 /* newsViewController.swift */,
@@ -106,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				A8F5601C24FBA16C007E8465 /* homePageCollectionViewCell.swift */,
+				A89A5A1C24FFCFCB0065F220 /* belgelerTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -188,8 +214,11 @@
 				A8F5601624FBA117007E8465 /* categoriesViewController.swift in Sources */,
 				A8044D6724FD49850079242A /* MenuTableViewController.swift in Sources */,
 				A851EAB824F791600015E46B /* AppDelegate.swift in Sources */,
+				A89A5A1D24FFCFCB0065F220 /* belgelerTableViewCell.swift in Sources */,
 				A851EABA24F791600015E46B /* SceneDelegate.swift in Sources */,
+				A8E2DCCA24FE858200594D64 /* belgelerViewController.swift in Sources */,
 				A8F5601824FBA121007E8465 /* newsViewController.swift in Sources */,
+				A89A5A1724FEE0590065F220 /* productDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

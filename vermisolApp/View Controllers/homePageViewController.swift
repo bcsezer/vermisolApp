@@ -75,7 +75,11 @@ class homePageViewController: UIViewController {
         switch menuType {
             
         case.belgeler:
-            print("Belgeler")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "belgeler") as? belgelerViewController
+            vc?.modalTransitionStyle = .crossDissolve
+            vc?.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(vc!, animated: true)
         case.etkinlikler:
             print("Belgeler")
         case.satisNoktalari:
@@ -102,7 +106,8 @@ extension homePageViewController: UICollectionViewDelegate,UICollectionViewDataS
         
         cell.imageView.image = UIImage(named: "1")
         cell.titleOfTheProduct.text = "deneme"
-        cell.shadowDecorate()
+        cell.layer.cornerRadius = 10
+        cell.layer.masksToBounds = true
         
         return cell
     }
@@ -115,17 +120,43 @@ extension homePageViewController: UICollectionViewDelegate,UICollectionViewDataS
         
         if screenSize.width == 414.0 {
             
-            widthCrll = 179
+            widthCrll = 300 //188
             heightCell = 172
             
         }else {
-            widthCrll = 120
+            widthCrll = 160 //120
             heightCell = 172
         }
         
         return  CGSize(width: widthCrll, height: heightCell)
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let screenSize :CGRect = UIScreen.main.bounds
+        print(screenSize)
+        var top = 0
+        var left = 0
+        var bottom = 0
+        var right = 0
+        
+        if screenSize.width == 414.0 {
+            top = 10
+            left = 30
+            right = 30
+            bottom = 10
+            
+            
+        }else {
+            top = 10
+            left = 10
+            right = 10
+            bottom = 10
+        }
+        return UIEdgeInsets(top: CGFloat(top), left: CGFloat(left), bottom: CGFloat(bottom), right: CGFloat(right))
+    }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "productDetailVC", sender: self)
+    }
 }
 extension homePageViewController: UIViewControllerTransitioningDelegate{
     
