@@ -11,7 +11,18 @@ import UIKit
 class belgelerViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var cellTitles = ["Kalite Belgeleri","tescil Belgeleri","Lisans Belgeleri","Analiz Sonuçları","Araştırmalarımız","Sözleşmeler"]
+    var sections = ["Kalite Belgeleri","tescil Belgeleri","Lisans Belgeleri","Analiz Sonuçları","Araştırmalarımız","Sözleşmeler"]
+    
+    var itemsInSections = [["ISO Belgesi",
+    "Çiftçi Kayıt Belgemiz",
+    "İşletme Kayıt Belgesi",
+    "Vermisol Organik Sertifikası"],
+    ["Vermisol Tescil Belgesi"],
+    ["Vermisol Lisans Belgesi"],
+    ["Analiz Sonuçları"],
+    ["Marul uygulaması","Mevsimlik Çuha Çiçeği Üretiminde Solucan Gübresi Denemesi","Mevsimlik Hercai Menekşe Üretiminde Solucan Gübresi Denemesi","Yaprak Analizi Sonuçları","Beylerbeyi Sarayı Çim Denemesi","Antalya Domates Denemesi","T.C. Jokey Kulübü Denemesi","Dolmabahçe Sarayı Deneme"],["Bayilik Sözleşmesi","Bölge Temsilciliği Sözleşmesi"]
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -24,15 +35,30 @@ class belgelerViewController: UIViewController {
 
 }
 extension belgelerViewController:UITableViewDelegate,UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section]
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+         return sections.count
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cellTitles.count
+        return itemsInSections[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "belgelerCell", for: indexPath) as! belgelerTableViewCell
-        cell.belgeTitle.text = cellTitles[indexPath.row]
+        
+        cell.belgeTitle.text = itemsInSections[indexPath.section][indexPath.row]
+        
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Selected Item İs : \(itemsInSections[indexPath.section][indexPath.row])")
     }
     
     

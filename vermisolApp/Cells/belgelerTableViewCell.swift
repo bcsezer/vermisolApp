@@ -15,6 +15,7 @@ class belgelerTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        configureCells()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -23,4 +24,9 @@ class belgelerTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    
+    func configureCells(){
+        layer.cornerRadius = 5
+        layer.masksToBounds = true
+    }
 }

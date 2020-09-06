@@ -12,19 +12,25 @@ class categoriesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        addLogoToNavigationBarItem()
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func addLogoToNavigationBarItem() {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(named: "logo")
+        //imageView.backgroundColor = .lightGray
+        
+        
+        
+        let contentView = UIView()
+        self.navigationItem.titleView = contentView
+        self.navigationItem.titleView?.addSubview(imageView)
+        imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
     }
-    */
-
 }
