@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,15 +16,21 @@
 		A851EAC424F791650015E46B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A851EAC224F791650015E46B /* LaunchScreen.storyboard */; };
 		A89A5A1724FEE0590065F220 /* productDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A5A1624FEE0590065F220 /* productDetailViewController.swift */; };
 		A89A5A1D24FFCFCB0065F220 /* belgelerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A5A1C24FFCFCB0065F220 /* belgelerTableViewCell.swift */; };
+		A8A80D702504BFA700CC06E0 /* iletisimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A80D6F2504BFA700CC06E0 /* iletisimViewController.swift */; };
+		A8A80D722504BFB900CC06E0 /* hakkımızdaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A80D712504BFB900CC06E0 /* hakkımızdaViewController.swift */; };
+		A8A80D762504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D752504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf */; };
 		A8E2DCCA24FE858200594D64 /* belgelerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2DCC924FE858200594D64 /* belgelerViewController.swift */; };
 		A8F5601424FBA0F9007E8465 /* homePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601324FBA0F9007E8465 /* homePageViewController.swift */; };
 		A8F5601624FBA117007E8465 /* categoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601524FBA117007E8465 /* categoriesViewController.swift */; };
 		A8F5601824FBA121007E8465 /* newsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601724FBA121007E8465 /* newsViewController.swift */; };
 		A8F5601A24FBA139007E8465 /* myOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601924FBA139007E8465 /* myOrdersViewController.swift */; };
 		A8F5601D24FBA16C007E8465 /* homePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601C24FBA16C007E8465 /* homePageCollectionViewCell.swift */; };
+		E8EC8D8A1AC233DB02FEA641 /* Pods_vermisolApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F0C4C4C835F3BF1D95C7CD /* Pods_vermisolApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CA76C8DA395ADA2AE2A12F5 /* Pods-vermisolApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vermisolApp.debug.xcconfig"; path = "Target Support Files/Pods-vermisolApp/Pods-vermisolApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6EF553CD2703EE6D1E66DBA0 /* Pods-vermisolApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vermisolApp.release.xcconfig"; path = "Target Support Files/Pods-vermisolApp/Pods-vermisolApp.release.xcconfig"; sourceTree = "<group>"; };
 		A8044D6624FD49850079242A /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		A8044D6824FD49BE0079242A /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
 		A851EAB424F791600015E46B /* vermisolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vermisolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,12 +42,16 @@
 		A851EAC524F791650015E46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A89A5A1624FEE0590065F220 /* productDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetailViewController.swift; sourceTree = "<group>"; };
 		A89A5A1C24FFCFCB0065F220 /* belgelerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = belgelerTableViewCell.swift; sourceTree = "<group>"; };
+		A8A80D6F2504BFA700CC06E0 /* iletisimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iletisimViewController.swift; sourceTree = "<group>"; };
+		A8A80D712504BFB900CC06E0 /* hakkımızdaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "hakkımızdaViewController.swift"; sourceTree = "<group>"; };
+		A8A80D752504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = vermisol_hakkimizda_pdf.pdf; sourceTree = "<group>"; };
 		A8E2DCC924FE858200594D64 /* belgelerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = belgelerViewController.swift; sourceTree = "<group>"; };
 		A8F5601324FBA0F9007E8465 /* homePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageViewController.swift; sourceTree = "<group>"; };
 		A8F5601524FBA117007E8465 /* categoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesViewController.swift; sourceTree = "<group>"; };
 		A8F5601724FBA121007E8465 /* newsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsViewController.swift; sourceTree = "<group>"; };
 		A8F5601924FBA139007E8465 /* myOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOrdersViewController.swift; sourceTree = "<group>"; };
 		A8F5601C24FBA16C007E8465 /* homePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageCollectionViewCell.swift; sourceTree = "<group>"; };
+		D6F0C4C4C835F3BF1D95C7CD /* Pods_vermisolApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vermisolApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,12 +59,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8EC8D8A1AC233DB02FEA641 /* Pods_vermisolApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		415E6F931AEF95DA521C8CF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CA76C8DA395ADA2AE2A12F5 /* Pods-vermisolApp.debug.xcconfig */,
+				6EF553CD2703EE6D1E66DBA0 /* Pods-vermisolApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A8044D6524FD48B10079242A /* Side Menü */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +91,8 @@
 			children = (
 				A851EAB624F791600015E46B /* vermisolApp */,
 				A851EAB524F791600015E46B /* Products */,
+				415E6F931AEF95DA521C8CF8 /* Pods */,
+				C7E0B2F518620CF0D795A0B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				A8E2DCC924FE858200594D64 /* belgelerViewController.swift */,
+				A8A80D6F2504BFA700CC06E0 /* iletisimViewController.swift */,
+				A8A80D712504BFB900CC06E0 /* hakkımızdaViewController.swift */,
+				A8A80D752504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf */,
 			);
 			name = "Menü Viewcontrollers";
 			path = "Menü Viewcontrollers";
@@ -136,6 +161,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		C7E0B2F518620CF0D795A0B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6F0C4C4C835F3BF1D95C7CD /* Pods_vermisolApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A851EAC824F791650015E46B /* Build configuration list for PBXNativeTarget "vermisolApp" */;
 			buildPhases = (
+				D3EA79BEC6978440C64C1122 /* [CP] Check Pods Manifest.lock */,
 				A851EAB024F791600015E46B /* Sources */,
 				A851EAB124F791600015E46B /* Frameworks */,
 				A851EAB224F791600015E46B /* Resources */,
+				63CD4009C7502C8DE9DFC912 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,12 +230,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				A851EAC424F791650015E46B /* LaunchScreen.storyboard in Resources */,
+				A8A80D762504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf in Resources */,
 				A851EAC124F791650015E46B /* Assets.xcassets in Resources */,
 				A851EABF24F791600015E46B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63CD4009C7502C8DE9DFC912 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vermisolApp/Pods-vermisolApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vermisolApp/Pods-vermisolApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vermisolApp/Pods-vermisolApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3EA79BEC6978440C64C1122 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vermisolApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A851EAB024F791600015E46B /* Sources */ = {
@@ -209,6 +287,8 @@
 			files = (
 				A8044D6924FD49BE0079242A /* SlideInTransition.swift in Sources */,
 				A8F5601424FBA0F9007E8465 /* homePageViewController.swift in Sources */,
+				A8A80D702504BFA700CC06E0 /* iletisimViewController.swift in Sources */,
+				A8A80D722504BFB900CC06E0 /* hakkımızdaViewController.swift in Sources */,
 				A8F5601A24FBA139007E8465 /* myOrdersViewController.swift in Sources */,
 				A8F5601D24FBA16C007E8465 /* homePageCollectionViewCell.swift in Sources */,
 				A8F5601624FBA117007E8465 /* categoriesViewController.swift in Sources */,
@@ -360,6 +440,7 @@
 		};
 		A851EAC924F791650015E46B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA76C8DA395ADA2AE2A12F5 /* Pods-vermisolApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,6 +460,7 @@
 		};
 		A851EACA24F791650015E46B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF553CD2703EE6D1E66DBA0 /* Pods-vermisolApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

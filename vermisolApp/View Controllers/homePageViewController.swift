@@ -14,7 +14,7 @@ class homePageViewController: UIViewController {
     let transition = SlideInTransition()
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        addLogoToNavigationBarItem()
         collectionView.delegate = self
         collectionView.dataSource = self
         // Do any additional setup after loading the view.
@@ -22,7 +22,7 @@ class homePageViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        addLogoToNavigationBarItem()
+        
        
     }
     override func viewDidLayoutSubviews() {
@@ -30,27 +30,24 @@ class homePageViewController: UIViewController {
     }
     // MARK: Nav Bar'a logo eklenmesi
    
-
-   
-         func addLogoToNavigationBarItem() {
-              let imageView = UIImageView()
-              imageView.translatesAutoresizingMaskIntoConstraints = false
-              imageView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-              imageView.contentMode = .scaleAspectFit
-              imageView.image = UIImage(named: "logo")
-              //imageView.backgroundColor = .lightGray
-
-              // In order to center the title view image no matter what buttons there are, do not set the
-              // image view as title view, because it doesn't work. If there is only one button, the image
-              // will not be aligned. Instead, a content view is set as title view, then the image view is
-              // added as child of the content view. Finally, using constraints the image view is aligned
-              // inside its parent.
-              let contentView = UIView()
-              self.navigationItem.titleView = contentView
-              self.navigationItem.titleView?.addSubview(imageView)
-              imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-              imageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-          }
+    
+    
+    func addLogoToNavigationBarItem() {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(named: "logo")
+        //imageView.backgroundColor = .lightGray
+        
+        
+        
+        let contentView = UIView()
+        self.navigationItem.titleView = contentView
+        self.navigationItem.titleView?.addSubview(imageView)
+        imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+    }
     
     
     @IBAction func menuButtonTapped(_ sender: Any) {
@@ -85,9 +82,18 @@ class homePageViewController: UIViewController {
         case.satisNoktalari:
             print("Belgeler")
         case.hakkımızda:
-            print("Belgeler")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "hakkımızda") as? hakkimizdaViewController
+            vc?.modalTransitionStyle = .crossDissolve
+            vc?.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(vc!, animated: true)
         case.iletisim:
-            print("Belgeler")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "iletisim") as? iletisimViewController
+            vc?.modalTransitionStyle = .crossDissolve
+            vc?.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(vc!, animated: true)
+            
         }
         
     }
@@ -97,7 +103,7 @@ class homePageViewController: UIViewController {
 }
 extension homePageViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 15
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
