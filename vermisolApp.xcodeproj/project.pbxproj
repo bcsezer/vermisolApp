@@ -19,6 +19,22 @@
 		A8A80D702504BFA700CC06E0 /* iletisimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A80D6F2504BFA700CC06E0 /* iletisimViewController.swift */; };
 		A8A80D722504BFB900CC06E0 /* hakkımızdaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A80D712504BFB900CC06E0 /* hakkımızdaViewController.swift */; };
 		A8A80D762504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D752504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf */; };
+		A8A80D7A25053F2300CC06E0 /* pdfsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A80D7925053F2300CC06E0 /* pdfsViewController.swift */; };
+		A8A80D7F2505407100CC06E0 /* ISO Belgesi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D7B2505407000CC06E0 /* ISO Belgesi.pdf */; };
+		A8A80D802505407100CC06E0 /* İşletme Kayıt Belgesi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D7C2505407000CC06E0 /* İşletme Kayıt Belgesi.pdf */; };
+		A8A80D812505407100CC06E0 /* Çiftçi Kayıt Belgemiz.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D7D2505407000CC06E0 /* Çiftçi Kayıt Belgemiz.pdf */; };
+		A8A80D822505407100CC06E0 /* Vermisol Organik Sertifikası.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D7E2505407000CC06E0 /* Vermisol Organik Sertifikası.pdf */; };
+		A8A80D842505419B00CC06E0 /* Vermisol Tescil Belgesi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D832505419B00CC06E0 /* Vermisol Tescil Belgesi.pdf */; };
+		A8A80D86250541DB00CC06E0 /* Vermisol Lisans Belgesi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D85250541DB00CC06E0 /* Vermisol Lisans Belgesi.pdf */; };
+		A8A80D88250541F800CC06E0 /* Analiz Sonuçları.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D87250541F800CC06E0 /* Analiz Sonuçları.pdf */; };
+		A8A80D8A2505421600CC06E0 /* Marul uygulaması.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D892505421600CC06E0 /* Marul uygulaması.pdf */; };
+		A8A80D8C2505423A00CC06E0 /* Mevsimlik Çuha Çiçeği Üretiminde Solucan Gübresi Denemesi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D8B2505423A00CC06E0 /* Mevsimlik Çuha Çiçeği Üretiminde Solucan Gübresi Denemesi.pdf */; };
+		A8A80D8E2505428900CC06E0 /* Mevsimlik Hercai Menekşe Üretiminde Solucan Gübresi Denemesi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D8D2505428900CC06E0 /* Mevsimlik Hercai Menekşe Üretiminde Solucan Gübresi Denemesi.pdf */; };
+		A8A80D90250542AF00CC06E0 /* Yaprak Analizi Sonuçları.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D8F250542AF00CC06E0 /* Yaprak Analizi Sonuçları.pdf */; };
+		A8A80D92250542D700CC06E0 /* Beylerbeyi Sarayı Çim Denemesi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D91250542D700CC06E0 /* Beylerbeyi Sarayı Çim Denemesi.pdf */; };
+		A8A80D94250542F600CC06E0 /* Antalya Domates Denemesi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D93250542F600CC06E0 /* Antalya Domates Denemesi.pdf */; };
+		A8A80D962505432200CC06E0 /* T.C. Jokey Kulübü Denemesi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D952505432200CC06E0 /* T.C. Jokey Kulübü Denemesi.pdf */; };
+		A8A80D982505435F00CC06E0 /* Dolmabahçe Sarayı Deneme.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D972505435F00CC06E0 /* Dolmabahçe Sarayı Deneme.pdf */; };
 		A8E2DCCA24FE858200594D64 /* belgelerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2DCC924FE858200594D64 /* belgelerViewController.swift */; };
 		A8F5601424FBA0F9007E8465 /* homePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601324FBA0F9007E8465 /* homePageViewController.swift */; };
 		A8F5601624FBA117007E8465 /* categoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601524FBA117007E8465 /* categoriesViewController.swift */; };
@@ -44,7 +60,23 @@
 		A89A5A1C24FFCFCB0065F220 /* belgelerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = belgelerTableViewCell.swift; sourceTree = "<group>"; };
 		A8A80D6F2504BFA700CC06E0 /* iletisimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iletisimViewController.swift; sourceTree = "<group>"; };
 		A8A80D712504BFB900CC06E0 /* hakkımızdaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "hakkımızdaViewController.swift"; sourceTree = "<group>"; };
-		A8A80D752504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = vermisol_hakkimizda_pdf.pdf; sourceTree = "<group>"; };
+		A8A80D752504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = vermisol_hakkimizda_pdf.pdf; path = ../vermisol_hakkimizda_pdf.pdf; sourceTree = "<group>"; };
+		A8A80D7925053F2300CC06E0 /* pdfsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pdfsViewController.swift; sourceTree = "<group>"; };
+		A8A80D7B2505407000CC06E0 /* ISO Belgesi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ISO Belgesi.pdf"; sourceTree = "<group>"; };
+		A8A80D7C2505407000CC06E0 /* İşletme Kayıt Belgesi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "İşletme Kayıt Belgesi.pdf"; sourceTree = "<group>"; };
+		A8A80D7D2505407000CC06E0 /* Çiftçi Kayıt Belgemiz.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Çiftçi Kayıt Belgemiz.pdf"; sourceTree = "<group>"; };
+		A8A80D7E2505407000CC06E0 /* Vermisol Organik Sertifikası.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Vermisol Organik Sertifikası.pdf"; sourceTree = "<group>"; };
+		A8A80D832505419B00CC06E0 /* Vermisol Tescil Belgesi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Vermisol Tescil Belgesi.pdf"; sourceTree = "<group>"; };
+		A8A80D85250541DB00CC06E0 /* Vermisol Lisans Belgesi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Vermisol Lisans Belgesi.pdf"; sourceTree = "<group>"; };
+		A8A80D87250541F800CC06E0 /* Analiz Sonuçları.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Analiz Sonuçları.pdf"; sourceTree = "<group>"; };
+		A8A80D892505421600CC06E0 /* Marul uygulaması.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Marul uygulaması.pdf"; sourceTree = "<group>"; };
+		A8A80D8B2505423A00CC06E0 /* Mevsimlik Çuha Çiçeği Üretiminde Solucan Gübresi Denemesi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Mevsimlik Çuha Çiçeği Üretiminde Solucan Gübresi Denemesi.pdf"; sourceTree = "<group>"; };
+		A8A80D8D2505428900CC06E0 /* Mevsimlik Hercai Menekşe Üretiminde Solucan Gübresi Denemesi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Mevsimlik Hercai Menekşe Üretiminde Solucan Gübresi Denemesi.pdf"; sourceTree = "<group>"; };
+		A8A80D8F250542AF00CC06E0 /* Yaprak Analizi Sonuçları.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Yaprak Analizi Sonuçları.pdf"; sourceTree = "<group>"; };
+		A8A80D91250542D700CC06E0 /* Beylerbeyi Sarayı Çim Denemesi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Beylerbeyi Sarayı Çim Denemesi.pdf"; sourceTree = "<group>"; };
+		A8A80D93250542F600CC06E0 /* Antalya Domates Denemesi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Antalya Domates Denemesi.pdf"; sourceTree = "<group>"; };
+		A8A80D952505432200CC06E0 /* T.C. Jokey Kulübü Denemesi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "T.C. Jokey Kulübü Denemesi.pdf"; sourceTree = "<group>"; };
+		A8A80D972505435F00CC06E0 /* Dolmabahçe Sarayı Deneme.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Dolmabahçe Sarayı Deneme.pdf"; sourceTree = "<group>"; };
 		A8E2DCC924FE858200594D64 /* belgelerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = belgelerViewController.swift; sourceTree = "<group>"; };
 		A8F5601324FBA0F9007E8465 /* homePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageViewController.swift; sourceTree = "<group>"; };
 		A8F5601524FBA117007E8465 /* categoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesViewController.swift; sourceTree = "<group>"; };
@@ -128,13 +160,37 @@
 			path = "Product Detail";
 			sourceTree = "<group>";
 		};
+		A8A80D7825053EE000CC06E0 /* pdfs */ = {
+			isa = PBXGroup;
+			children = (
+				A8A80D752504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf */,
+				A8A80D7D2505407000CC06E0 /* Çiftçi Kayıt Belgemiz.pdf */,
+				A8A80D7B2505407000CC06E0 /* ISO Belgesi.pdf */,
+				A8A80D7C2505407000CC06E0 /* İşletme Kayıt Belgesi.pdf */,
+				A8A80D7E2505407000CC06E0 /* Vermisol Organik Sertifikası.pdf */,
+				A8A80D832505419B00CC06E0 /* Vermisol Tescil Belgesi.pdf */,
+				A8A80D85250541DB00CC06E0 /* Vermisol Lisans Belgesi.pdf */,
+				A8A80D87250541F800CC06E0 /* Analiz Sonuçları.pdf */,
+				A8A80D892505421600CC06E0 /* Marul uygulaması.pdf */,
+				A8A80D8B2505423A00CC06E0 /* Mevsimlik Çuha Çiçeği Üretiminde Solucan Gübresi Denemesi.pdf */,
+				A8A80D8D2505428900CC06E0 /* Mevsimlik Hercai Menekşe Üretiminde Solucan Gübresi Denemesi.pdf */,
+				A8A80D8F250542AF00CC06E0 /* Yaprak Analizi Sonuçları.pdf */,
+				A8A80D91250542D700CC06E0 /* Beylerbeyi Sarayı Çim Denemesi.pdf */,
+				A8A80D93250542F600CC06E0 /* Antalya Domates Denemesi.pdf */,
+				A8A80D952505432200CC06E0 /* T.C. Jokey Kulübü Denemesi.pdf */,
+				A8A80D972505435F00CC06E0 /* Dolmabahçe Sarayı Deneme.pdf */,
+			);
+			path = pdfs;
+			sourceTree = "<group>";
+		};
 		A8E2DCC824FE856500594D64 /* Menü Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				A8A80D7825053EE000CC06E0 /* pdfs */,
 				A8E2DCC924FE858200594D64 /* belgelerViewController.swift */,
 				A8A80D6F2504BFA700CC06E0 /* iletisimViewController.swift */,
 				A8A80D712504BFB900CC06E0 /* hakkımızdaViewController.swift */,
-				A8A80D752504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf */,
+				A8A80D7925053F2300CC06E0 /* pdfsViewController.swift */,
 			);
 			name = "Menü Viewcontrollers";
 			path = "Menü Viewcontrollers";
@@ -230,8 +286,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A851EAC424F791650015E46B /* LaunchScreen.storyboard in Resources */,
+				A8A80D842505419B00CC06E0 /* Vermisol Tescil Belgesi.pdf in Resources */,
+				A8A80D92250542D700CC06E0 /* Beylerbeyi Sarayı Çim Denemesi.pdf in Resources */,
+				A8A80D8C2505423A00CC06E0 /* Mevsimlik Çuha Çiçeği Üretiminde Solucan Gübresi Denemesi.pdf in Resources */,
+				A8A80D802505407100CC06E0 /* İşletme Kayıt Belgesi.pdf in Resources */,
+				A8A80D88250541F800CC06E0 /* Analiz Sonuçları.pdf in Resources */,
+				A8A80D86250541DB00CC06E0 /* Vermisol Lisans Belgesi.pdf in Resources */,
+				A8A80D7F2505407100CC06E0 /* ISO Belgesi.pdf in Resources */,
+				A8A80D8A2505421600CC06E0 /* Marul uygulaması.pdf in Resources */,
 				A8A80D762504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf in Resources */,
+				A8A80D982505435F00CC06E0 /* Dolmabahçe Sarayı Deneme.pdf in Resources */,
+				A8A80D8E2505428900CC06E0 /* Mevsimlik Hercai Menekşe Üretiminde Solucan Gübresi Denemesi.pdf in Resources */,
+				A8A80D94250542F600CC06E0 /* Antalya Domates Denemesi.pdf in Resources */,
+				A8A80D822505407100CC06E0 /* Vermisol Organik Sertifikası.pdf in Resources */,
+				A8A80D90250542AF00CC06E0 /* Yaprak Analizi Sonuçları.pdf in Resources */,
+				A8A80D962505432200CC06E0 /* T.C. Jokey Kulübü Denemesi.pdf in Resources */,
 				A851EAC124F791650015E46B /* Assets.xcassets in Resources */,
+				A8A80D812505407100CC06E0 /* Çiftçi Kayıt Belgemiz.pdf in Resources */,
 				A851EABF24F791600015E46B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +370,7 @@
 				A8E2DCCA24FE858200594D64 /* belgelerViewController.swift in Sources */,
 				A8F5601824FBA121007E8465 /* newsViewController.swift in Sources */,
 				A89A5A1724FEE0590065F220 /* productDetailViewController.swift in Sources */,
+				A8A80D7A25053F2300CC06E0 /* pdfsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@ import MessageUI
 class iletisimViewController: UIViewController, MFMailComposeViewControllerDelegate {
     fileprivate let application = UIApplication.shared
     @IBOutlet weak var view1: UIView!
-    @IBOutlet weak var view2: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class iletisimViewController: UIViewController, MFMailComposeViewControllerDeleg
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         cornerRadiousConfig(view: view1)
-        cornerRadiousConfig(view: view2)
+       
     }
     
 

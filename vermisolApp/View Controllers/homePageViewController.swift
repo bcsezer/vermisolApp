@@ -8,16 +8,19 @@
 
 import UIKit
 
-class homePageViewController: UIViewController {
+class homePageViewController: UIViewController,UITabBarDelegate{
     @IBOutlet weak var collectionView: UICollectionView!
     //Menu Transition
     let transition = SlideInTransition()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addLogoToNavigationBarItem()
         collectionView.delegate = self
         collectionView.dataSource = self
+        
         // Do any additional setup after loading the view.
+     
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,10 +31,11 @@ class homePageViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         
     }
+  
+
+    
     // MARK: Nav Bar'a logo eklenmesi
-   
-    
-    
+
     func addLogoToNavigationBarItem() {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -177,3 +181,5 @@ extension homePageViewController: UIViewControllerTransitioningDelegate{
     }
     
 }
+
+

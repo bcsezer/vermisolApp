@@ -9,39 +9,48 @@
 import UIKit
 
 class belgelerViewController: UIViewController {
-
+    var selectedCell = ""
+    
     @IBOutlet weak var tableView: UITableView!
-    var sections = ["Kalite Belgeleri","tescil Belgeleri","Lisans Belgeleri","Analiz Sonuçları","Araştırmalarımız","Sözleşmeler"]
+    var sections = ["Kalite Belgeleri","Tescil Belgelesi","Lisans Belgelesi","Analiz Sonuçu","Araştırmalarımız","Sözleşmeler"]
     
     var itemsInSections = [["ISO Belgesi",
-    "Çiftçi Kayıt Belgemiz",
-    "İşletme Kayıt Belgesi",
-    "Vermisol Organik Sertifikası"],
-    ["Vermisol Tescil Belgesi"],
-    ["Vermisol Lisans Belgesi"],
-    ["Analiz Sonuçları"],
-    ["Marul uygulaması","Mevsimlik Çuha Çiçeği Üretiminde Solucan Gübresi Denemesi","Mevsimlik Hercai Menekşe Üretiminde Solucan Gübresi Denemesi","Yaprak Analizi Sonuçları","Beylerbeyi Sarayı Çim Denemesi","Antalya Domates Denemesi","T.C. Jokey Kulübü Denemesi","Dolmabahçe Sarayı Deneme"],["Bayilik Sözleşmesi","Bölge Temsilciliği Sözleşmesi"]
+                            "Çiftçi Kayıt Belgemiz",
+                            "İşletme Kayıt Belgesi",
+                            "Vermisol Organik Sertifikası"],
+                           ["Vermisol Tescil Belgesi"],
+                           ["Vermisol Lisans Belgesi"],
+                           ["Analiz Sonuçları"],
+                           ["Marul uygulaması","Mevsimlik Çuha Çiçeği Üretiminde Solucan Gübresi Denemesi","Mevsimlik Hercai Menekşe Üretiminde Solucan Gübresi Denemesi","Yaprak Analizi Sonuçları","Beylerbeyi Sarayı Çim Denemesi","Antalya Domates Denemesi","T.C. Jokey Kulübü Denemesi","Dolmabahçe Sarayı Deneme"],["Bayilik Sözleşmesi","Bölge Temsilciliği Sözleşmesi"]
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-      
+        
     }
     
-
-  
-
+    // MARK: Prepare For Segue's
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? pdfsViewController {
+            destination.selectedPdf = selectedCell
+        }
+        
+    }
+    
+    
 }
 extension belgelerViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        
         return sections[section]
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-         return sections.count
+        return sections.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemsInSections[section].count
@@ -56,10 +65,23 @@ extension belgelerViewController:UITableViewDelegate,UITableViewDataSource{
         
         return cell
     }
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        
+        //For Header Background Color
+        view.tintColor = .black
+        
+        
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = .black
+        header.textLabel?.font = UIFont(name: "arial", size: 15)
+    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Selected Item İs : \(itemsInSections[indexPath.section][indexPath.row])")
+        
+        selectedCell =  itemsInSections[indexPath.section][indexPath.row]
+        performSegue(withIdentifier: "showPdf", sender: self)
     }
+    
     
     
 }

@@ -44,6 +44,10 @@ class MenuTableViewController: UITableViewController {
         greenViewConfig(view: view4)
         greenViewConfig(view: view5)
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+         dismiss(animated: true)
+    }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
