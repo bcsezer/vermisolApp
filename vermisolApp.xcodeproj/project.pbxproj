@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A8044D6724FD49850079242A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8044D6624FD49850079242A /* MenuTableViewController.swift */; };
 		A8044D6924FD49BE0079242A /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8044D6824FD49BE0079242A /* SlideInTransition.swift */; };
+		A81DA1A325160B8B004F5341 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A81DA1A225160B8B004F5341 /* GoogleService-Info.plist */; };
+		A81DA1A525161328004F5341 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81DA1A425161328004F5341 /* loginViewController.swift */; };
+		A81DA1A7251621EB004F5341 /* profileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81DA1A6251621EB004F5341 /* profileTableViewCell.swift */; };
 		A851EAB824F791600015E46B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A851EAB724F791600015E46B /* AppDelegate.swift */; };
 		A851EABA24F791600015E46B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A851EAB924F791600015E46B /* SceneDelegate.swift */; };
 		A851EABF24F791600015E46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A851EABD24F791600015E46B /* Main.storyboard */; };
@@ -35,10 +38,10 @@
 		A8A80D94250542F600CC06E0 /* Antalya Domates Denemesi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D93250542F600CC06E0 /* Antalya Domates Denemesi.pdf */; };
 		A8A80D962505432200CC06E0 /* T.C. Jokey Kulübü Denemesi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D952505432200CC06E0 /* T.C. Jokey Kulübü Denemesi.pdf */; };
 		A8A80D982505435F00CC06E0 /* Dolmabahçe Sarayı Deneme.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D972505435F00CC06E0 /* Dolmabahçe Sarayı Deneme.pdf */; };
+		A8A80DA02506AB2700CC06E0 /* etkinliklerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A80D9F2506AB2700CC06E0 /* etkinliklerViewController.swift */; };
 		A8E2DCCA24FE858200594D64 /* belgelerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2DCC924FE858200594D64 /* belgelerViewController.swift */; };
 		A8F5601424FBA0F9007E8465 /* homePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601324FBA0F9007E8465 /* homePageViewController.swift */; };
-		A8F5601624FBA117007E8465 /* categoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601524FBA117007E8465 /* categoriesViewController.swift */; };
-		A8F5601824FBA121007E8465 /* newsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601724FBA121007E8465 /* newsViewController.swift */; };
+		A8F5601824FBA121007E8465 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601724FBA121007E8465 /* profileViewController.swift */; };
 		A8F5601A24FBA139007E8465 /* myOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601924FBA139007E8465 /* myOrdersViewController.swift */; };
 		A8F5601D24FBA16C007E8465 /* homePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5601C24FBA16C007E8465 /* homePageCollectionViewCell.swift */; };
 		E8EC8D8A1AC233DB02FEA641 /* Pods_vermisolApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F0C4C4C835F3BF1D95C7CD /* Pods_vermisolApp.framework */; };
@@ -49,6 +52,9 @@
 		6EF553CD2703EE6D1E66DBA0 /* Pods-vermisolApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vermisolApp.release.xcconfig"; path = "Target Support Files/Pods-vermisolApp/Pods-vermisolApp.release.xcconfig"; sourceTree = "<group>"; };
 		A8044D6624FD49850079242A /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		A8044D6824FD49BE0079242A /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
+		A81DA1A225160B8B004F5341 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A81DA1A425161328004F5341 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		A81DA1A6251621EB004F5341 /* profileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileTableViewCell.swift; sourceTree = "<group>"; };
 		A851EAB424F791600015E46B /* vermisolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vermisolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A851EAB724F791600015E46B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A851EAB924F791600015E46B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,10 +83,10 @@
 		A8A80D93250542F600CC06E0 /* Antalya Domates Denemesi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Antalya Domates Denemesi.pdf"; sourceTree = "<group>"; };
 		A8A80D952505432200CC06E0 /* T.C. Jokey Kulübü Denemesi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "T.C. Jokey Kulübü Denemesi.pdf"; sourceTree = "<group>"; };
 		A8A80D972505435F00CC06E0 /* Dolmabahçe Sarayı Deneme.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Dolmabahçe Sarayı Deneme.pdf"; sourceTree = "<group>"; };
+		A8A80D9F2506AB2700CC06E0 /* etkinliklerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = etkinliklerViewController.swift; sourceTree = "<group>"; };
 		A8E2DCC924FE858200594D64 /* belgelerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = belgelerViewController.swift; sourceTree = "<group>"; };
 		A8F5601324FBA0F9007E8465 /* homePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageViewController.swift; sourceTree = "<group>"; };
-		A8F5601524FBA117007E8465 /* categoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesViewController.swift; sourceTree = "<group>"; };
-		A8F5601724FBA121007E8465 /* newsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsViewController.swift; sourceTree = "<group>"; };
+		A8F5601724FBA121007E8465 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		A8F5601924FBA139007E8465 /* myOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOrdersViewController.swift; sourceTree = "<group>"; };
 		A8F5601C24FBA16C007E8465 /* homePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		D6F0C4C4C835F3BF1D95C7CD /* Pods_vermisolApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vermisolApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +154,7 @@
 				A851EAC024F791650015E46B /* Assets.xcassets */,
 				A851EAC224F791650015E46B /* LaunchScreen.storyboard */,
 				A851EAC524F791650015E46B /* Info.plist */,
+				A81DA1A225160B8B004F5341 /* GoogleService-Info.plist */,
 			);
 			path = vermisolApp;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 				A8A80D6F2504BFA700CC06E0 /* iletisimViewController.swift */,
 				A8A80D712504BFB900CC06E0 /* hakkımızdaViewController.swift */,
 				A8A80D7925053F2300CC06E0 /* pdfsViewController.swift */,
+				A8A80D9F2506AB2700CC06E0 /* etkinliklerViewController.swift */,
 			);
 			name = "Menü Viewcontrollers";
 			path = "Menü Viewcontrollers";
@@ -201,9 +209,9 @@
 			children = (
 				A89A5A1524FEE0060065F220 /* Product Detail */,
 				A8F5601324FBA0F9007E8465 /* homePageViewController.swift */,
-				A8F5601524FBA117007E8465 /* categoriesViewController.swift */,
-				A8F5601724FBA121007E8465 /* newsViewController.swift */,
+				A8F5601724FBA121007E8465 /* profileViewController.swift */,
 				A8F5601924FBA139007E8465 /* myOrdersViewController.swift */,
+				A81DA1A425161328004F5341 /* loginViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -213,6 +221,7 @@
 			children = (
 				A8F5601C24FBA16C007E8465 /* homePageCollectionViewCell.swift */,
 				A89A5A1C24FFCFCB0065F220 /* belgelerTableViewCell.swift */,
+				A81DA1A6251621EB004F5341 /* profileTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -286,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A851EAC424F791650015E46B /* LaunchScreen.storyboard in Resources */,
+				A81DA1A325160B8B004F5341 /* GoogleService-Info.plist in Resources */,
 				A8A80D842505419B00CC06E0 /* Vermisol Tescil Belgesi.pdf in Resources */,
 				A8A80D92250542D700CC06E0 /* Beylerbeyi Sarayı Çim Denemesi.pdf in Resources */,
 				A8A80D8C2505423A00CC06E0 /* Mevsimlik Çuha Çiçeği Üretiminde Solucan Gübresi Denemesi.pdf in Resources */,
@@ -359,16 +369,18 @@
 				A8044D6924FD49BE0079242A /* SlideInTransition.swift in Sources */,
 				A8F5601424FBA0F9007E8465 /* homePageViewController.swift in Sources */,
 				A8A80D702504BFA700CC06E0 /* iletisimViewController.swift in Sources */,
+				A81DA1A7251621EB004F5341 /* profileTableViewCell.swift in Sources */,
 				A8A80D722504BFB900CC06E0 /* hakkımızdaViewController.swift in Sources */,
 				A8F5601A24FBA139007E8465 /* myOrdersViewController.swift in Sources */,
 				A8F5601D24FBA16C007E8465 /* homePageCollectionViewCell.swift in Sources */,
-				A8F5601624FBA117007E8465 /* categoriesViewController.swift in Sources */,
+				A8A80DA02506AB2700CC06E0 /* etkinliklerViewController.swift in Sources */,
 				A8044D6724FD49850079242A /* MenuTableViewController.swift in Sources */,
 				A851EAB824F791600015E46B /* AppDelegate.swift in Sources */,
 				A89A5A1D24FFCFCB0065F220 /* belgelerTableViewCell.swift in Sources */,
 				A851EABA24F791600015E46B /* SceneDelegate.swift in Sources */,
 				A8E2DCCA24FE858200594D64 /* belgelerViewController.swift in Sources */,
-				A8F5601824FBA121007E8465 /* newsViewController.swift in Sources */,
+				A81DA1A525161328004F5341 /* loginViewController.swift in Sources */,
+				A8F5601824FBA121007E8465 /* profileViewController.swift in Sources */,
 				A89A5A1724FEE0590065F220 /* productDetailViewController.swift in Sources */,
 				A8A80D7A25053F2300CC06E0 /* pdfsViewController.swift in Sources */,
 			);

@@ -15,7 +15,7 @@ class homePageViewController: UIViewController,UITabBarDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addLogoToNavigationBarItem()
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         
@@ -25,7 +25,8 @@ class homePageViewController: UIViewController,UITabBarDelegate{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        addLogoToNavigationBarItem()
+        collectionView.layoutSubviews()
        
     }
     override func viewDidLayoutSubviews() {
@@ -83,8 +84,6 @@ class homePageViewController: UIViewController,UITabBarDelegate{
             self.navigationController?.pushViewController(vc!, animated: true)
         case.etkinlikler:
             print("Belgeler")
-        case.satisNoktalari:
-            print("Belgeler")
         case.hakkımızda:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "hakkımızda") as? hakkimizdaViewController
@@ -98,6 +97,7 @@ class homePageViewController: UIViewController,UITabBarDelegate{
             vc?.modalPresentationStyle = .fullScreen
             self.navigationController?.pushViewController(vc!, animated: true)
             
+        
         }
         
     }
@@ -167,6 +167,7 @@ extension homePageViewController: UICollectionViewDelegate,UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         performSegue(withIdentifier: "productDetailVC", sender: self)
     }
+   
 }
 extension homePageViewController: UIViewControllerTransitioningDelegate{
     

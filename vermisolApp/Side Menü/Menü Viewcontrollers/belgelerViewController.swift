@@ -73,13 +73,15 @@ extension belgelerViewController:UITableViewDelegate,UITableViewDataSource{
         
         let header = view as! UITableViewHeaderFooterView
         header.textLabel?.textColor = .black
-        header.textLabel?.font = UIFont(name: "arial", size: 15)
+        header.textLabel?.font = UIFont(name: "arial", size: 16)
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         selectedCell =  itemsInSections[indexPath.section][indexPath.row]
         performSegue(withIdentifier: "showPdf", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     

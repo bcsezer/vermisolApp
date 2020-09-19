@@ -12,7 +12,6 @@ enum  MenuType: Int ,CaseIterable{
        
        case belgeler
        case etkinlikler
-       case satisNoktalari
        case hakkımızda
        case iletisim
        
@@ -40,7 +39,6 @@ class MenuTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         greenViewConfig(view: view1)
         greenViewConfig(view: view2)
-        greenViewConfig(view: view3)
         greenViewConfig(view: view4)
         greenViewConfig(view: view5)
     }
