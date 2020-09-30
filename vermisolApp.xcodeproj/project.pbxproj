@@ -17,6 +17,7 @@
 		A851EABF24F791600015E46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A851EABD24F791600015E46B /* Main.storyboard */; };
 		A851EAC124F791650015E46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A851EAC024F791650015E46B /* Assets.xcassets */; };
 		A851EAC424F791650015E46B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A851EAC224F791650015E46B /* LaunchScreen.storyboard */; };
+		A865195F252484C20020EBBA /* redirectToLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865195E252484C20020EBBA /* redirectToLoginViewController.swift */; };
 		A89A5A1724FEE0590065F220 /* productDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A5A1624FEE0590065F220 /* productDetailViewController.swift */; };
 		A89A5A1D24FFCFCB0065F220 /* belgelerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A5A1C24FFCFCB0065F220 /* belgelerTableViewCell.swift */; };
 		A8A80D702504BFA700CC06E0 /* iletisimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A80D6F2504BFA700CC06E0 /* iletisimViewController.swift */; };
@@ -62,6 +63,7 @@
 		A851EAC024F791650015E46B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A851EAC324F791650015E46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A851EAC524F791650015E46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A865195E252484C20020EBBA /* redirectToLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redirectToLoginViewController.swift; sourceTree = "<group>"; };
 		A89A5A1624FEE0590065F220 /* productDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetailViewController.swift; sourceTree = "<group>"; };
 		A89A5A1C24FFCFCB0065F220 /* belgelerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = belgelerTableViewCell.swift; sourceTree = "<group>"; };
 		A8A80D6F2504BFA700CC06E0 /* iletisimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iletisimViewController.swift; sourceTree = "<group>"; };
@@ -150,13 +152,21 @@
 				A8F5601224FBA0D4007E8465 /* View Controllers */,
 				A851EAB724F791600015E46B /* AppDelegate.swift */,
 				A851EAB924F791600015E46B /* SceneDelegate.swift */,
-				A851EABD24F791600015E46B /* Main.storyboard */,
+				A865195C25247CEA0020EBBA /* Storyboards */,
 				A851EAC024F791650015E46B /* Assets.xcassets */,
-				A851EAC224F791650015E46B /* LaunchScreen.storyboard */,
 				A851EAC524F791650015E46B /* Info.plist */,
 				A81DA1A225160B8B004F5341 /* GoogleService-Info.plist */,
 			);
 			path = vermisolApp;
+			sourceTree = "<group>";
+		};
+		A865195C25247CEA0020EBBA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A851EABD24F791600015E46B /* Main.storyboard */,
+				A851EAC224F791650015E46B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		A89A5A1524FEE0060065F220 /* Product Detail */ = {
@@ -212,6 +222,7 @@
 				A8F5601724FBA121007E8465 /* profileViewController.swift */,
 				A8F5601924FBA139007E8465 /* myOrdersViewController.swift */,
 				A81DA1A425161328004F5341 /* loginViewController.swift */,
+				A865195E252484C20020EBBA /* redirectToLoginViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -377,6 +388,7 @@
 				A8044D6724FD49850079242A /* MenuTableViewController.swift in Sources */,
 				A851EAB824F791600015E46B /* AppDelegate.swift in Sources */,
 				A89A5A1D24FFCFCB0065F220 /* belgelerTableViewCell.swift in Sources */,
+				A865195F252484C20020EBBA /* redirectToLoginViewController.swift in Sources */,
 				A851EABA24F791600015E46B /* SceneDelegate.swift in Sources */,
 				A8E2DCCA24FE858200594D64 /* belgelerViewController.swift in Sources */,
 				A81DA1A525161328004F5341 /* loginViewController.swift in Sources */,

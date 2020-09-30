@@ -28,9 +28,18 @@ class profileViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         addLogoToNavigationBarItem()
+        checkedProfilePageIsActive()
     }
     
-  
+    func checkedProfilePageIsActive(){
+        if Auth.auth().currentUser == nil{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "ifNotLogin")
+            self.navigationController?.pushViewController(vc!, animated: true)
+            tableView.isHidden = true
+        }else{
+            tableView.isHidden = false
+        }
+    }
    func addLogoToNavigationBarItem() {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false

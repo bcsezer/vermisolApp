@@ -19,6 +19,7 @@ class homePageViewController: UIViewController,UITabBarDelegate{
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        
         // Do any additional setup after loading the view.
      
     }
@@ -27,6 +28,7 @@ class homePageViewController: UIViewController,UITabBarDelegate{
         super.viewWillAppear(animated)
         addLogoToNavigationBarItem()
         collectionView.layoutSubviews()
+        
        
     }
     override func viewDidLayoutSubviews() {
@@ -54,7 +56,7 @@ class homePageViewController: UIViewController,UITabBarDelegate{
         imageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
     }
     
-    
+   
     @IBAction func menuButtonTapped(_ sender: Any) {
         guard  let menuViewController = storyboard?.instantiateViewController(identifier: "slideMenu") as? MenuTableViewController else {return}
               menuViewController.didTapMenuType = { menuType in
