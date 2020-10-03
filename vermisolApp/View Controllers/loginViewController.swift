@@ -17,7 +17,6 @@ class loginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
-    @IBOutlet weak var continueWithoutLogin: UIButton!
     
     @IBOutlet weak var signUpButton: UIButton!
     
@@ -29,13 +28,12 @@ class loginViewController: UIViewController {
         cornerRadious(textField: passwordText)
         cornerRadiousbuttons(button: loginButton)
         cornerRadiousbuttons(button: signUpButton)
-        cornerRadiousbuttons(button: continueWithoutLogin)
         
-      
-    }
-    
-    @IBAction func üyeGirisiYapmadan(_ sender: UIButton) {
-        performSegue(withIdentifier: "toHomeScreen", sender: self)
+        
+        let i = navigationController?.viewControllers.firstIndex(of: self)
+        let previousViewController = navigationController?.viewControllers[i!-1]
+        
+        print(previousViewController!)
     }
     
     
@@ -79,9 +77,11 @@ class loginViewController: UIViewController {
             if error != nil{
                 self.makeAllert(title: "Uyarı", message: error!.localizedDescription)
                 
-            }else{
-                self.performSegue(withIdentifier: "toHomeScreen", sender: self)
+            }else if self.navigationController?.viewControllers.previous is profileViewController{
+                //MARK:To return profile page
+                self.navigationController?.popViewController(animated: true)
             }
+           
           
         }
         }else{
@@ -108,4 +108,14 @@ func setRightPaddingPoints(_ amount:CGFloat) {
     self.rightView = paddingView
     self.rightViewMode = .always
 }
+}
+extension Array where Iterator.Element == UIViewController {
+
+    var previous: UIViewController? {
+        if self.count > 1 {
+            return self[self.count - 2]
+        }
+        return nil
+    }
+
 }
