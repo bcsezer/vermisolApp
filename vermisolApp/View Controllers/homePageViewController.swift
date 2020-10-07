@@ -35,7 +35,8 @@ class homePageViewController: UIViewController,UITabBarDelegate{
         
     }
   
-
+    @IBAction func unwind( _ seg: UIStoryboardSegue) {
+    }
     
     // MARK: Nav Bar'a logo eklenmesi
 

@@ -20,6 +20,7 @@
 		A865195F252484C20020EBBA /* redirectToLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865195E252484C20020EBBA /* redirectToLoginViewController.swift */; };
 		A89A5A1724FEE0590065F220 /* productDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A5A1624FEE0590065F220 /* productDetailViewController.swift */; };
 		A89A5A1D24FFCFCB0065F220 /* belgelerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A5A1C24FFCFCB0065F220 /* belgelerTableViewCell.swift */; };
+		A8A7BE8C252B3945009B3C9C /* productDecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A7BE8B252B3945009B3C9C /* productDecisionViewController.swift */; };
 		A8A80D702504BFA700CC06E0 /* iletisimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A80D6F2504BFA700CC06E0 /* iletisimViewController.swift */; };
 		A8A80D722504BFB900CC06E0 /* hakkımızdaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A80D712504BFB900CC06E0 /* hakkımızdaViewController.swift */; };
 		A8A80D762504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8A80D752504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf */; };
@@ -66,6 +67,7 @@
 		A865195E252484C20020EBBA /* redirectToLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redirectToLoginViewController.swift; sourceTree = "<group>"; };
 		A89A5A1624FEE0590065F220 /* productDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetailViewController.swift; sourceTree = "<group>"; };
 		A89A5A1C24FFCFCB0065F220 /* belgelerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = belgelerTableViewCell.swift; sourceTree = "<group>"; };
+		A8A7BE8B252B3945009B3C9C /* productDecisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDecisionViewController.swift; sourceTree = "<group>"; };
 		A8A80D6F2504BFA700CC06E0 /* iletisimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iletisimViewController.swift; sourceTree = "<group>"; };
 		A8A80D712504BFB900CC06E0 /* hakkımızdaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "hakkımızdaViewController.swift"; sourceTree = "<group>"; };
 		A8A80D752504D92900CC06E0 /* vermisol_hakkimizda_pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = vermisol_hakkimizda_pdf.pdf; path = ../vermisol_hakkimizda_pdf.pdf; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				A89A5A1624FEE0590065F220 /* productDetailViewController.swift */,
+				A8A7BE8B252B3945009B3C9C /* productDecisionViewController.swift */,
 			);
 			path = "Product Detail";
 			sourceTree = "<group>";
@@ -274,7 +277,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Cem Sezeroglu";
 				TargetAttributes = {
 					A851EAB324F791600015E46B = {
@@ -395,6 +398,7 @@
 				A8F5601824FBA121007E8465 /* profileViewController.swift in Sources */,
 				A89A5A1724FEE0590065F220 /* productDetailViewController.swift in Sources */,
 				A8A80D7A25053F2300CC06E0 /* pdfsViewController.swift in Sources */,
+				A8A7BE8C252B3945009B3C9C /* productDecisionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +450,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -506,6 +511,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

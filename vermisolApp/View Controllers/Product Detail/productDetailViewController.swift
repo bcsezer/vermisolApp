@@ -11,6 +11,9 @@ import ImageSlideshow
 
 class productDetailViewController: UIViewController, ImageSlideshowDelegate {
 
+    var ifselectedOrder = false
+    
+    
      let localSource = [BundleImageSource(imageString: "1"), BundleImageSource(imageString: "2"), BundleImageSource(imageString: "3")]
     
     @IBOutlet weak var slideshow: ImageSlideshow!
@@ -44,6 +47,7 @@ class productDetailViewController: UIViewController, ImageSlideshowDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        configureOrderButtonClicked()
         configureBuyButton()
     }
     func configureBuyButton(){
@@ -51,7 +55,15 @@ class productDetailViewController: UIViewController, ImageSlideshowDelegate {
         buyButton.layer.masksToBounds = true
         
     }
-    
+  
+        func configureOrderButtonClicked(){
+            
+            if ifselectedOrder == true{
+                tabBarController?.selectedIndex = 2
+            }else{
+                ifselectedOrder = false
+            }
+        }
     
     func imageSlideshow(_ imageSlideshow: ImageSlideshow, didChangeCurrentPageTo page: Int) {
              print("current page:", page)
@@ -60,7 +72,7 @@ class productDetailViewController: UIViewController, ImageSlideshowDelegate {
     @objc func didTap() {
         let fullScreenController = slideshow.presentFullScreenController(from: self)
         // set the activity indicator for full screen controller (skipping the line will show no activity indicator)
-        fullScreenController.slideshow.activityIndicator = DefaultActivityIndicator(style: .white, color: nil)
+        fullScreenController.slideshow.activityIndicator = DefaultActivityIndicator(style: UIActivityIndicatorView.Style.medium, color: .white)
     }
     
 }
